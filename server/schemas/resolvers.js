@@ -6,13 +6,6 @@ const resolvers = {
     user: async (parent, { username }) => {
       return User.findOne({ username }).populate('savedBooks');
     },
-    Book: async (parent, { username }) => {
-      const params = username ? { username } : {};
-      return Book.find(params).sort({ createdAt: -1 });
-    },
-    Book: async (parent, { thoughtId }) => {
-      return Book.findOne({ _id: thoughtId });
-    },
   },
 
   Mutation: {
