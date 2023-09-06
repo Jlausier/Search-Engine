@@ -8,7 +8,7 @@ import {
   Row
 } from 'react-bootstrap';
 import { useMutation } from '@apollo/client'; // Import Apollo Client hook
-import { GET_ME, SAVE_BOOK } from '../utils/queries'; // Import GraphQL queries and mutations
+import { GET_ME, SAVE_BOOK } from '../utils/mutations'; // Import GraphQL queries and mutations
 import Auth from '../utils/auth';
 import { saveBookIds, getSavedBookIds } from '../utils/localStorage';
 
